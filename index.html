@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Local Storage Implementation</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="top">
+            <h1>Add to Local Storage Guide</h1>
+            <hr>
+        </div>
+        <div id="middle">
+            <h2>Demo</h2>
+            <h3>Items in local storage:</h3>
+            <ul id="display">
+            </ul>
+            <input type="text" id="input">
+            <button onclick="addItem()" class="btn">Add</button>
+            <p id="storage"></p>
+        </div>
+        <hr>
+        <div id="bottom">
+            <h2>How to Implement</h2>
+            <h3>HTML</h3>
+            <img src="images/html.PNG" alt="htmlCode" />
+            <hr>
+            <h3>JS</h3>
+            <h4>Pre local storage</h4>
+            <img src="images/js1.PNG" alt="js1" />
+            <ol>
+                <li>Create variables
+                    <ul>
+                        <li>input: holds text value that is passed to inputNode</li>
+                        <li>liObj: a newly created li element</li>
+                        <li>inputNode: creates a node</li>
+                    </ul>
+                </li>
+                <li>append input value as child of newly created element</li>
+                <li>append newly created element to ul</li>
+            </ol>
+            <hr>
+            <h4>Saving to storage</h4>
+            <img src="images/js2.PNG" alt="js2">
+            <ol>
+                <li>create a funciton called save</li>
+                <li>handle if local storage is empty</li>
+                <li>ensure new input does not overwrite previous input</li>
+            </ol>
+            <hr>
+            <h4>Display contents in local storage</h4>
+            <img src="images/js3.PNG" alt="js3">
+        </div>
+        <hr>
+        <h2>How to Check Local Storage Values</h2>
+        <table>
+            <tr>
+                <th>Steps</th>
+                <th>Picture</th>
+            </tr>
+            <tr>
+                <td>Demo</td>
+                <td>
+                    <img src="images/demo.PNG" alt="demo" />
+                </td>
+            </tr>
+            <tr>
+                <td>1. Open Developer tools ( ctrl + shift + i)
+                <br>2. Go to Application tab</td>
+                <td><img src="images/devTools.PNG" alt="devTools" /></td>
+            </tr>
+            <tr>
+                <td>3. Find Local Storage under Storage</td>
+                <td><img src="images/devTools2.PNG" alt="devTools2" /></td>
+            </tr>
+            <tr>
+                <td>Click on "file://"</td>
+                <td>
+                    <img src="images/devTools3.PNG" alt="devTools3" />
+                </td>
+            </tr>
+        </table>
+        <script src="main.js"></script>
+    </body>
+</html>
